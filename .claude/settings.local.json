@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__web-search-prime__web_search_prime",
+      "mcp__web-reader__webReader",
+      "Bash(git clone:*)",
+      "mcp__zread__read_file",
+      "mcp__exa__web_search_exa",
+      "Bash(mkdir -p \"D:/myfiles/obsidian/30-Areas/ClaudeCode-任务追踪/进行中\" && mkdir -p \"D:/myfiles/obsidian/30-Areas/ClaudeCode-任务追踪/已完成\" && mkdir -p \"D:/myfiles/obsidian/30-Areas/ClaudeCode-任务追踪/已归档\")",
+      "Bash(chmod +x \"D:/myfiles/obsidian/30-Areas/ClaudeCode-任务追踪/task-manager.sh\")",
+      "Bash(claude --version 2>/dev/null || echo \"CLI version not accessible via command\")",
+      "WebSearch",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "mcp__filesystem__list_directory",
+      "WebFetch(domain:time.geekbang.org)",
+      "Bash(curl -s -L \"https://time.geekbang.org/column/article/928176\" 2>/dev/null | head -500)",
+      "Bash(curl -s -L -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36\" --max-time 20 \"https://time.geekbang.org/column/article/928176\" 2>&1 | head -1000)",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_run_code",
+      "mcp__playwright__browser_fill_form",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_tabs"
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+[     138ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0
+[     853ms] Object
+[   42525ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0

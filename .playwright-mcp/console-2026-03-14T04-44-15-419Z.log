@@ -1,0 +1,53 @@
+[     450ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0
+[   75457ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ chrome-error://chromewebdata/:0
+[  102134ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0
+[  103124ms] Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'then')
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:145042)
+    at value (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627164)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627198)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:144969)
+[  104516ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0
+[  105279ms] Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'then')
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:145042)
+    at value (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627164)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627198)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:144969)
+[  106806ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0
+[  107998ms] Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'then')
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:145042)
+    at value (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627164)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627198)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:144969)
+[  109243ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0
+[  110276ms] Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'then')
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:145042)
+    at value (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627164)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627198)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:144969)
+[  163642ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0
+[  164456ms] Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'then')
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:145042)
+    at value (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627164)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627198)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:144969)
+[  165338ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0
+[  165967ms] Object
+[  166094ms] Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'then')
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:145042)
+    at value (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627164)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627198)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:144969)
+[  166628ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0
+[  167334ms] Object
+[  167449ms] Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'then')
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:145042)
+    at value (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627164)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:627198)
+    at <anonymous> (https://static001.geekbang.org/static/time/js/chunk-173f0758.17781021.js:29:144969)
+[  167891ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ chrome-error://chromewebdata/:0
+[  169347ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0
+[  208346ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0
+[  209211ms] Object
+[  422981ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0
+[  483945ms] [WARNING] document.domain mutation is ignored because the surrounding agent cluster is origin-keyed. @ https://static001.geekbang.org/static/time/js/index.2a53e024.js:0
+[  484794ms] Object
