@@ -11,90 +11,155 @@ aliases:
 ## 💡 常用组合命令
 
 <!-- 记录实际工作中用到的组合命令 -->
-后端发版
-```
-docker ps 
+
+### 后端发版
+
+```bash
+docker ps
 ```
 
-```
-docker stop hems-backend 
-```
-
-```
-cd /usr/local/helianHome/hems-backend/ 
+```bash
+docker stop hems-backend
 ```
 
-```
-rm -f hems-0.0.1-SNAPSHOT.jar.bak 
-```
-
-```
-mv hems-0.0.1-SNAPSHOT.jar hems-0.0.1-SNAPSHOT.jar.bak 
+```bash
+cd /usr/local/helianHome/hems-backend/
 ```
 
-```
-上传新包至/usr/local/helianHome/hems-backend/ 
-```
-
-```
-docker start hems-backend 
+```bash
+rm -f hems-0.0.1-SNAPSHOT.jar.bak
 ```
 
+```bash
+mv hems-0.0.1-SNAPSHOT.jar hems-0.0.1-SNAPSHOT.jar.bak
 ```
+
+```bash
+# 上传新包至/usr/local/helianHome/hems-backend/
+```
+
+```bash
+docker start hems-backend
+```
+
+```bash
 docker logs -f --tail 300 hems-backend
 ```
-前端发版
-```
+
+---
+
+### 前端发版
+
+```bash
 docker ps
+```
 
-docker stop hems-nginx 
+```bash
+docker stop hems-nginx
+```
 
-cd /usr/local/helianHome/hems-nginx 
+```bash
+cd /usr/local/helianHome/hems-nginx
+```
 
-上传前端提供的压缩包（如 `舟山_0917.zip`）到该目录。 
+```bash
+# 上传前端提供的压缩包（如 `舟山_0917.zip`）到该目录
+```
 
-unzip 武汉光谷0107.zip "dist/*" -d ./tem 
+```bash
+unzip 武汉光谷 0107.zip "dist/*" -d ./tem
+```
 
-rm -rf ./html-bak mv ./html ./html-bak 
+```bash
+rm -rf ./html-bak
+```
 
-mv ./tem/dist/ ./html 
+```bash
+mv ./html ./html-bak
+```
 
+```bash
+mv ./tem/dist/ ./html
+```
+
+```bash
 docker start hems-nginx
 ```
-接口发版
+
+```bash
+docker logs -f --tail 300 hems-nginx
 ```
+
+---
+
+### 接口发版
+
+```bash
 docker stop hems-interface
+```
 
+```bash
 cd /usr/local/helianHome/hems-interface
+```
 
+```bash
 mv hems-interface.jar hems-interface.jar.bak
+```
 
-上传新的 jar 包
+```bash
+# 上传新的 jar 包
+```
 
+```bash
 docker restart hems-interface
 ```
-Redis 缓存清理
-```
+
+---
+
+### Redis 缓存清理
+
+```bash
 docker exec -it helian-redis bash
+```
 
+```bash
 redis-cli -h 172.66.202.152 -p 6379 -a Helian@2022 -n 8
+```
 
+```bash
 KEYS "*model_result_cache_key*"
+```
 
+```bash
 EVAL "return redis.call('DEL', unpack(redis.call('KEYS', ARGV[1])))" 0 "*model_result_cache_key*"
 ```
-Curl导报告
-```
-拉报告-linux 
-sudo curl -L -X POST "http://192.168.100.10:8090/api/open/download/report/zip" -H "token:eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3NzQzNjY1MjIsInN1YiI6IueuoeeQhuWRmCIsImlhdCI6MTc3MzM2NjUyMjc5Mn0.-h_EW6TJKBWSfvcHrWGKPnGDyHgXNXHB-qweavx0X5UKihGFt2UghpOYy4WVy8G1pyrernXCqZvOnixnBfsIfw" -H "Content-Type: application/json" -d '["228974_1"]' -o /usr/local/helianHome/staticfiles/report.zip
 
-推报告-powershell 
+---
+
+### Curl 导报告
+
+#### 拉报告 - Linux
+
+```bash
+sudo curl -L -X POST "http://192.168.100.10:8090/api/open/download/report/zip" -H "token:eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3NzQzNjY1MjIsInN1YiI6IueuoeeQhuWRmCIsImlhdCI6MTc3MzM2NjUyMjc5Mn0.-h_EW6TJKBWSfvcHrWGKPnGDyHgXNXHB-qweavx0X5UKihGFt2UghpOYy4WVy8G1pyrernXCqZvOnixnBfsIfw" -H "Content-Type: application/json" -d '["228974_1"]' -o /usr/local/helianHome/staticfiles/report.zip
+```
+
+#### 推报告 - PowerShell
+
+```powershell
 curl.exe -X POST "http://10.20.3.2:9942/api/open/upload/report/zip" -F "file=@D:\myfiles\报告\光谷\report.zip"
 ```
-测试服务器手动发包
+
+---
+
+### 测试服务器手动发包
+
+```bash
+nohup /usr/local/lib/jdk1.8.0_172/bin/java -Xms512m -Xmx512m -jar /opt/hems/server/znzj-wuhanguanggu-dev/hems-0.0.1-SNAPSHOT.jar -Dlog4j2.formatMsgNoLookups=true --server.port=9511 --spring.profiles.active=wuhanguanggudev --his.feeItem.compareUrl=http://127.0.0.1:9510/compare/getMockData >output.log 2>&1 &
 ```
-nohup /usr/local/lib/jdk1.8.0_172/bin/java -Xms512m -Xmx512m -jar /opt/hems/server/znzj-wuhanguanggu-dev/hems-0.0.1-SNAPSHOT.jar -Dlog4j2.formatMsgNoLookups=true --server.port=9511 --spring.profiles.active=wuhanguanggudev  --his.feeItem.compareUrl=http://127.0.0.1:9510/compare/getMockData >output.log 2>&1 &
-```
+
+---
+
 # Linux 命令参考
 
 ---
@@ -169,4 +234,3 @@ zip -r archive.zip dir/           # 压缩
 unzip archive.zip                 # 解压
 ```
 ---
-

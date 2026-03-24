@@ -21,7 +21,29 @@
       "mcp__playwright__browser_run_code",
       "mcp__playwright__browser_fill_form",
       "mcp__playwright__browser_navigate",
-      "mcp__playwright__browser_tabs"
+      "mcp__playwright__browser_tabs",
+      "Bash(powershell -Command \"Get-Content ''30-Areas/Work-工作/01-任务日志 2603.md'' -Encoding UTF8\")",
+      "Bash(../../../../Windows/System32/cmd.exe /c type \"01-任务日志 2603.md\")",
+      "mcp__filesystem__read_text_file",
+      "Read(//d D:/myfiles/**)",
+      "Bash(powershell.exe -Command \"Read-Host ''30-Areas/Work-工作/01-任务日志 2603.md''\")",
+      "mcp__filesystem__get_file_info",
+      "mcp__filesystem__search_files",
+      "Bash(powershell -NoProfile -Command \"Get-Content 'D:\\\\myfiles\\\\obsidian\\\\30-Areas\\\\Work-工作\\\\01-任务日志 2603.md' -Raw\")",
+      "Bash(obsidian read:*)",
+      "Bash(obsidian search:*)",
+      "Bash(git -C \"D:/myfiles/obsidian\" diff -- \"30-Areas/Work-工作/01-任务日志 2603.md\")",
+      "Bash(certutil -decodehex \"D:/myfiles/obsidian/30-Areas/Work-工作/01-任务日志 2603.md\" NUL)",
+      "Bash(wsl cat:*)",
+      "Bash(node:*)",
+      "Bash(python3:*)",
+      "Bash(python:*)",
+      "mcp__filesystem__read_multiple_files",
+      "Bash(cat *.md)",
+      "Bash(cd /d \"D:/myfiles/obsidian\")",
+      "Bash(powershell -Command \"Get-Content 'D:/myfiles/obsidian/30-Areas/Work-工作/01-任务日志 2603.md' -Encoding UTF8\")",
+      "Bash(git remote:*)",
+      "Bash(git add:*)"
     ]
   }
 }
